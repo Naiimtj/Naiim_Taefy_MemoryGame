@@ -3,8 +3,6 @@ import IPokemonCard from '../../models/pokemon_card.ts'
 
 function Board ( { listOfPokemons }: { listOfPokemons: IPokemonCard[] }) {
 
-
-// Número de Clicks (0-1-2)
     const [clickN, SetclickN] = React.useState(0)
     const crypto = globalThis.crypto;
     const board_cards = listOfPokemons.concat(listOfPokemons)
